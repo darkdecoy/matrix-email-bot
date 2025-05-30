@@ -4,11 +4,7 @@
 
 * Replace Out of date libraries
   * node-mailin
-  * matrix-bot-sdk
-    * request
-    * request-promise
   * node-email-reply-parser
-  * striptags
 * work with upstream to replace deprecated modules in matrix-bot-sdk
   * request
   * request-promise
