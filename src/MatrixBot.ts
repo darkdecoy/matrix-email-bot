@@ -2,7 +2,7 @@ import { EncryptedFile, MatrixClient } from "matrix-bot-sdk";
 import { MessageType } from "./MessageType";
 import { getRoomConfig } from "./configUtils";
 import * as sanitizeHtml from "sanitize-html";
-import * as striptags from "striptags";
+import stripHtmlTags from 'duct-strip-html-tags';
 import { IDbMessage } from "./DataStore";
 
 // Much of this is based off of matrix-react-sdk's HtmlUtils
@@ -74,7 +74,7 @@ export class MatrixBot {
         };
 
         if (!roomConfig.plaintextOnly) {
-            content["body"] = plainFormat || striptags(content.body);
+            content["body"] = plainFormat || stripHtmlTags(content.body);
             content["formatted_body"] = messageFormat.replace(/\n/g, '<br/>'); // clients are expected to sanitize this
             content["format"] = "org.matrix.custom.html";
         }
