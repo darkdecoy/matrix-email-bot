@@ -11,23 +11,23 @@
     "url": "git+https://github.com/darkdecoy/matrix-email-bot.git"
   },
   "dependencies": {
-    "@umpacken/node-mailin": "^2.7.0",
-    "better-sqlite3": "^9.4.1",
-    "config": "^3.3.11",
-    "express": "^4.18.2",
-    "js-yaml": "^4.1.0",
-    "mailparser": "^3.6.7",
-    "matrix-bot-sdk": "^0.7.1",
-    "node-email-reply-parser": "^0.1.4",
-    "pug": "^3.0.2",
-    "request": "^2.88.2",
-    "sanitize-html": "2.11.0",
+    "@umpacken/node-mailin": "~2.7.0",
+    "better-sqlite3": "~9.4.1",
+    "config": "~3.3.11",
+    "express": "~4.18.2",
+    "js-yaml": "~4.1.0",
+    "mailparser": "~3.6.7",
+    "matrix-bot-sdk": "~0.7.1",
+    "node-email-reply-parser": "~0.1.4",
+    "pug": "~3.0.2",
+    "request": "~2.88.2",
+    "sanitize-html": "~2.11.0",
     "smtp-server": "3.13.2",
-    "striptags": "^3.2.0",
-    "uuid": "^9.0.1"
+    "striptags": "~3.2.0",
+    "uuid": "~9.0.1"
   },
   "devDependencies": {
     "@types/node": "20",
-    "typescript": "^5.3.3"
+    "typescript": "~5.3.3"
   }
 }
